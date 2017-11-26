@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  isActive = false;
+  post = {
+    isFavorite: false,
+  }
+
+  onFavoriteClicked(isFavorite){
+    console.log("Favorite klickad på för bövelen", isFavorite);
+  }
 }
