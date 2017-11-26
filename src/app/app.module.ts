@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 
@@ -9,6 +9,7 @@ import { TitlecasePipe } from './titlecase.pipe';
 import { TitleComponent } from './title/title.component';
 import { ZippyComponent } from './zippy/zippy.component';
 import { CourseFormComponent } from './course-form/course-form.component';
+import { UpdatePasswordComponent } from './update-password/update-password.component';
 
 
 @NgModule({
@@ -19,10 +20,12 @@ import { CourseFormComponent } from './course-form/course-form.component';
     TitleComponent,
     ZippyComponent,
     CourseFormComponent,
+    UpdatePasswordComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
   ],
