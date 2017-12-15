@@ -7,10 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseFormComponent {
   categories = ["Development", "Programming", "Machine Learning"];
-  
-  log(name) {
-    console.log(name);
-  }
 
   submit(course) {
     console.log(course);
